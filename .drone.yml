@@ -1,0 +1,7 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    repo: mrpolo17/drone-docker
+    tages: [ latest ]
+    dockerfile: Dockerfile
+    secrets: [ docker_user, docker_pwd]
