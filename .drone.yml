@@ -4,4 +4,8 @@ pipeline:
     repo: mrpolo17/drone-docker
     tages: [ latest ]
     dockerfile: Dockerfile
-    secrets: [ docker_user, docker_pwd]
+    secrets: 
+      - source: docker_user
+        target: docker_username
+      - source: docker_pwd
+        target: docker_password
